@@ -23,7 +23,7 @@ http://www.springframework.org/schema/beans http://www.springframework.org/schem
 		name="HTTP_Listener_Configuration" 
 		doc:name="HTTP Listener Configuration"
 		host="0.0.0.0" 
-		port="18081"  />
+		port="${http.port}"  />
 	<db:derby-config name="Derby_Configuration" doc:name="Derby Configuration"
 		url="jdbc:derby:memory:muleEmbeddedDB;create=true"  />
 	<jms:activemq-connector name="Active_MQ"
