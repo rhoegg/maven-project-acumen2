@@ -48,6 +48,15 @@
 				</executions>
 			</plugin>
 			<plugin>
+				<groupId>com.mulesoft.munit.tools</groupId>
+				<artifactId>munit-maven-plugin</artifactId>
+				<configuration>
+					<dynamicPorts>
+						<dynamicPort>http.port</dynamicPort>
+					</dynamicPorts>
+				</configuration>
+			</plugin>
+			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-app-maven-plugin</artifactId>
 				<version>${mule.tools.version}</version>
