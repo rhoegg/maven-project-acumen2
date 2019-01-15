@@ -47,7 +47,9 @@ http://www.springframework.org/schema/beans http://www.springframework.org/schem
 ---
 payload]]></dw:set-payload>
 		</dw:transform-message>
-		<object-to-string-transformer doc:name="Object to String" />
+		<object-to-string-transformer doc:name="Object to String"/>
+        <set-property propertyName="Content-Type" value="application/json" doc:name="Content-Type"/>
+        <logger level="DEBUG" category="com.mulesoft.training" doc:name="Logger"/>
 		<jms:outbound-endpoint queue="flights"
 			connector-ref="Active_MQ" doc:name="flights" />
 	</flow>
