@@ -16,6 +16,7 @@
 		<mule.version>3.9.1</mule.version>
 		<mule.tools.version>1.7</mule.tools.version>
 		<derby.version>10.14.2.0</derby.version>
+		<activemq.version>5.11.3</activemq.version>
 	</properties>
 
 	<build>
@@ -127,17 +128,17 @@
 		<dependency>
 			<groupId>org.apache.activemq</groupId>
 			<artifactId>activemq-client</artifactId>
-			<version>5.11.3</version>
+			<version>${activemq.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.activemq</groupId>
 			<artifactId>activemq-broker</artifactId>
-			<version>5.11.3</version>
+			<version>${activemq.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.activemq</groupId>
 			<artifactId>activemq-kahadb-store</artifactId>
-			<version>5.11.3</version>
+			<version>${activemq.version}</version>
 		</dependency>
 		<!-- for testing -->
 		<dependency>
